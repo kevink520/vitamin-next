@@ -37,7 +37,7 @@ export default function Header({ dark }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { pathname } = useRouter();
   return (
-    <nav className={`w-full ${dark ? 'bg-brand-black text-brand-white' : 'bg-brand-white text-brand-black'}`}>
+    <nav className={`w-full fixed top-0 z-50 ${dark ? 'bg-brand-black text-brand-white' : 'bg-brand-white text-brand-black'}`}>
       <div className="container px-4 mx-auto flex flex-wrap items-center justify-between py-6">
         <div className="w-full lg:w-auto flex justify-between items-center">
           <div className="flex items-center flex-shrink-0 mr-6">
