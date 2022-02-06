@@ -25,7 +25,7 @@ export default function MainTyped({ dark }) {
 
   return (
     <div className={`inline text-2xl leading-normal ${dark ? 'text-brand-white' : 'text-brand-dark-gray'}`}>
-      <div itemprop="name">
+      <div itemProp="name">
         <p className="mb-3">
           <span className="inline text-4xl leading-normal lg:text-2xl lg:leading-normal xl:text-4xl xl:leading-normal">
             <span className={`${dark ? 'text-brand-white' : 'text-brand-orange'}`}>

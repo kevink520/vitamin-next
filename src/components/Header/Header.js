@@ -52,25 +52,25 @@ export default function Header({ dark }) {
               </a>
             </Link>
           </div>
-          <div class="lg:hidden flex justify-end">
+          <div className="lg:hidden flex justify-end">
             <button
-              class="toc-toggler relative w-12 h-12 outline-none"
+              className="toc-toggler relative w-12 h-12 outline-none"
               onClick={() => setIsMenuOpen((val) => !val)}
             >
-              <span class="sr-only">Menu</span>
+              <span className="sr-only">Menu</span>
               <span
                 aria-hidden="true"
-                class={`block absolute h-1 w-12 bg-brand-black transform transition duration-500 ease-in-out ${isMenuOpen ? 'rotate-45 translate-y-0' : '-translate-y-3'
+                className={`block absolute h-1 w-12 bg-brand-black transform transition duration-500 ease-in-out ${isMenuOpen ? 'rotate-45 translate-y-0' : '-translate-y-3'
                   }`}
               ></span>
               <span
                 aria-hidden="true"
-                class={`layer-2 block absolute h-1 w-12 bg-brand-black transform transition duration-500 ease-in-out${isMenuOpen ? ' opacity-0' : ''
+                className={`layer-2 block absolute h-1 w-12 bg-brand-black transform transition duration-500 ease-in-out${isMenuOpen ? ' opacity-0' : ''
                   }`}
               ></span>
               <span
                 aria-hidden="true"
-                class={`layer-3 block absolute h-1 w-12 bg-brand-black transform transition duration-500 ease-in-out ${isMenuOpen ? '-rotate-45 translate-y-0' : 'translate-y-3'
+                className={`layer-3 block absolute h-1 w-12 bg-brand-black transform transition duration-500 ease-in-out ${isMenuOpen ? '-rotate-45 translate-y-0' : 'translate-y-3'
                   }`}
               ></span>
             </button>

@@ -11,7 +11,7 @@ export default function Services() {
       <div className="container services px-4 mx-auto">
         <h2 className="orange">Services</h2>
         <div className="lg:flex -mx-4">
-          <div className="lg:w-1/2 px-4 service copywriting" itemprop="makesOffer" itemscope itemtype="http://schema.org/Offer">
+          <div className="lg:w-1/2 px-4 service copywriting" itemProp="makesOffer" itemScope itemType="http://schema.org/Offer">
             <div className="md:flex -mx-4">
               <div className="md:w-1/2 px-4 service-header">
                 <h3 className="service-title">Copywriting</h3>
@@ -46,7 +46,7 @@ export default function Services() {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/2 px-4 service wp-theme" itemprop="makesOffer" itemscope itemtype="http://schema.org/Offer">
+          <div className="lg:w-1/2 px-4 service wp-theme" itemProp="makesOffer" itemScope itemType="http://schema.org/Offer">
             <div className="md:flex -mx-4">
               <div className="md:w-1/2 px-4 service-header">
                 <h3 className="service-title">WP website development</h3>
@@ -59,7 +59,7 @@ export default function Services() {
           </div>
         </div>
         <div className="lg:flex -mx-4">
-          <div className="lg:w-1/2 px-4 service wp-theme" itemprop="makesOffer" itemscope itemtype="http://schema.org/Offer">
+          <div className="lg:w-1/2 px-4 service wp-theme" itemProp="makesOffer" itemScope itemType="http://schema.org/Offer">
             <div className="md:flex -mx-4">
               <div className="md:w-1/2 px-4 service-header">
                 <h3 className="service-title">Ecommerce site development</h3>
