@@ -18,7 +18,7 @@ export default function Home() {
       />
       <Layout>
         <Header />
-        <div className="container px-4 pb-12 mx-auto">
+        <div id="home" className="container px-4 pb-12 mx-auto">
           <div className="lg:flex -mx-4">
             <div className="inline-block lg:w-1/3 px-4 lg:pt-20 xl:pt-24 mb-12">
               <MainTyped />
