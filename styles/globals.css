@@ -6,11 +6,11 @@ html {
   scroll-behavior: smooth;
 }
 
-:target::before {
-  content: '';
-  display: block;
-  height: 123px;
-  margin: -123px 0 0;
+#services,
+#portfolio,
+#about,
+#contact {
+  scroll-margin-top: 123px;
 }
 
 html,
