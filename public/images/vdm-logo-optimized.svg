@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="119px" height="74px" viewBox="0 0 119 74" enable-background="new 0 0 119 74" xml:space="preserve">
+<style>
+	.style0{
+		stroke:	#000000;
+		stroke-width:	7;
+		stroke-miterlimit:	10;
+		fill:	#FFFFFF;
+	}
+	.style1{
+		font-size:	16.1233;
+		font-family:	'ArialMT';
+		fill:	#FF3300;
+	}
+	.style2{
+		font-size:	16.1233;
+		font-family:	'ArialMT';
+		fill:	#666666;
+	}
+</style><path d="M115.5 67.275c0 1.987-1.19 3.225-3.251 3.2 H7.732C5.67 70.5 3.5 69.3 3.5 67.275V7.021C3.5 5 5.7 3.5 7.7 3.5h104.517c2.062 0 3.3 1.5 3.3 3.521V67.275z" class="style0"/>
+<text transform="matrix(1 0 0 1 13.2207 31.8848)"><tspan x="0" y="0" class="style1">Vitamin</tspan><tspan x="0" y="19.3" class="style2">Digital Media</tspan></text>
+</svg>
