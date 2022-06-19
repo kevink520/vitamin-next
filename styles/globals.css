@@ -201,6 +201,9 @@ h5 {
 .link-to-client-site {
   display: block;
 }
+.link-to-client-site > span {
+  vertical-align: top;
+}
 .portfolio img {
   max-width: 100%;
 }
