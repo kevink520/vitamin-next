@@ -163,19 +163,19 @@ export default function Portfolio() {
           <div className="item item7" itemType="http://schema.org/WebPage">
             <a
               className="link-to-client-site"
-              href="https://codepen.io/kevink520/full/jGzbxJ/"
+              href="https://nextwitter.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Image
-                src="/images/simon-game-app-p.jpg"
-                alt="Simon® Game"
+                src="/images/nextwitter-p.jpg"
+                alt="nextwitter"
                 width={750}
                 height={428}
               />
               <div className="description">
-                <h4 itemProp="name">Simon® Game</h4>
-                <p className="hidden-sm">Simon® game app made with React</p>
+                <h4 itemProp="name">nextwitter</h4>
+                <p className="hidden-sm">A Twitter-inspired social app made with Next.js</p>
               </div>
             </a>
           </div>
