@@ -53,7 +53,7 @@ export default function Services() {
                 <WPDevelopSVG />
               </div>
               <div className="flex flex-col justify-center md:w-1/2 px-4">
-                <p className="service-description">WordPress is the world&rsquo;s most popular content management system (CMS),used by major brands including Sony Music and Vogue.  I can turn any design into a fully editable, responsive website using WordPress.</p>
+                <p className="service-description">WordPress is the world&rsquo;s most popular content management system (CMS), used by major brands including Sony Music and Vogue.  I can turn any design into a fully editable, responsive website using WordPress.</p>
               </div>
             </div>
           </div>
