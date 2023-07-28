@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Slider from 'react-slick'
 
@@ -15,6 +15,7 @@ const settings = {
 
 export default function MainSlider () {
   const [ready, setReady] = useState(false)
+  useEffect(() => setTimeout(() => setReady(true), 3000), [])
   return (
     <Slider {...settings} className={`main-slider${ready ? ' ready' : ''}`} beforeChange={(oldIndex) => oldIndex === 0 && setReady(true)}>
       <div className='slide-inner w-full'>
