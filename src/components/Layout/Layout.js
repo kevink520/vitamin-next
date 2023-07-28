@@ -1,7 +1,7 @@
-export default function Layout({ children }) {
+export default function Layout ({ children }) {
   return (
-    <div className="w-full pt-32 bg-brand-white">
+    <div className='w-full pt-32 bg-brand-white'>
       {children}
     </div>
-  );
+  )
 }

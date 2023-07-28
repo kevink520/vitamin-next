@@ -1,4 +1,3 @@
-export function highlightCurrentPath(currentPath, route) {
-  return currentPath === route ? ' current' : '';
+export function highlightCurrentPath (currentPath, route) {
+  return currentPath === route ? ' current' : ''
 }
-

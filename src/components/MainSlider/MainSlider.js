@@ -1,10 +1,8 @@
-import Image from 'next/image';
-import Header from 'src/components/Header';
-import Slider from 'react-slick';
-import MainTyped from 'src/components/MainTyped';
+import { useState } from 'react'
+import Image from 'next/image'
+import Slider from 'react-slick'
 
 const settings = {
-  className: 'main-slider',
   arrows: false,
   autoplay: true,
   autoplaySpeed: 5000,
@@ -12,52 +10,53 @@ const settings = {
   infinite: true,
   speed: 1000,
   slidesToShow: 1,
-  slidesToScroll: 1,
-};
+  slidesToScroll: 1
+}
 
-export default function MainSlider() {
+export default function MainSlider () {
+  const [ready, setReady] = useState(false)
   return (
-    <Slider {...settings}>
-      <div className="slide-inner w-full">
+    <Slider {...settings} className={`main-slider${ready ? ' ready' : ''}`} beforeChange={(oldIndex) => oldIndex === 0 && setReady(true)}>
+      <div className='slide-inner w-full'>
         <Image
-          src="/images/newportlaworr-devices.png"
+          src='/images/newportlaworr-devices.png'
           width={889}
           height={560}
-          alt="Thomas B. Orr, Esq."
+          alt='Thomas B. Orr, Esq.'
         />
       </div>
-      <div className="slide-inner w-full">
+      <div className='slide-inner w-full'>
         <Image
-          src="/images/janetogle-devices.png"
+          src='/images/janetogle-devices.png'
           width={889}
           height={560}
-          alt="Janet Ogle"
+          alt='Janet Ogle'
         />
       </div>
-      <div className="slide-inner w-full">
+      <div className='slide-inner w-full'>
         <Image
-          src="/images/bridge22-devices.png"
+          src='/images/bridge22-devices.png'
           width={889}
           height={560}
-          alt="Bridge22"
+          alt='Bridge22'
         />
       </div>
-      <div className="slide-inner w-full">
+      <div className='slide-inner w-full'>
         <Image
-          src="/images/therooseveltdoctor-devices.png"
+          src='/images/therooseveltdoctor-devices.png'
           width={889}
           height={560}
-          alt="Jack Resnick, M.D."
+          alt='Jack Resnick, M.D.'
         />
       </div>
-      <div className="slide-inner w-full">
+      <div className='slide-inner w-full'>
         <Image
-          src="/images/miltoncleaners-devices.png"
+          src='/images/miltoncleaners-devices.png'
           width={889}
           height={560}
-          alt="Milton Cleaners"
+          alt='Milton Cleaners'
         />
       </div>
     </Slider>
-  );
+  )
 }

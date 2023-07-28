@@ -1,1 +1,1 @@
-export { default } from './MainTyped';
+export { default } from './MainTyped'

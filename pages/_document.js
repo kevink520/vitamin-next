@@ -1,20 +1,20 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {
-  render() {
+  render () {
     return (
-      <Html lang="en">
+      <Html lang='en'>
         <Head>
-          <link rel="icon" href="/favicon.ico" />
-          <link rel="stylesheet" href="https://use.typekit.net/vrj7xjc.css" />
+          <link rel='icon' href='/favicon.ico' />
+          <link rel='stylesheet' href='https://use.typekit.net/vrj7xjc.css' />
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
       </Html>
-    );
+    )
   }
 }
 
-export default MyDocument;
+export default MyDocument

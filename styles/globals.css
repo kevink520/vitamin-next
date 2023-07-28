@@ -66,8 +66,13 @@ a {
   margin-bottom: 2em;
 }
 
-.main-slider .slick-slide {
+.main-slider.ready .slick-slide {
   opacity: 1 !important;
+}
+
+.main-slider .slick-slide:first-child .slide-inner {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
+  animation: none !important;
 }
 
 .main-slider .slick-slide:not(.slick-active) .slide-inner {
