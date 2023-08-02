@@ -12,7 +12,8 @@ const strings5 = [
 ]
 
 const typeSpeed = 30
-const startDelay2 = strings1[0].length * typeSpeed + 300
+const startDelay1 = 1000
+const startDelay2 = startDelay1 + strings1[0].length * typeSpeed + 300
 const startDelay3 = startDelay2 + strings2[0].length * typeSpeed + 300
 const startDelay4 = startDelay3 + strings3[0].length * typeSpeed + 300
 const startDelay5 = startDelay4 + strings4[0].length * typeSpeed + 300
@@ -33,6 +34,7 @@ export default function MainTyped ({ dark }) {
                 className='typed show-cursor'
                 strings={strings1}
                 typeSpeed={typeSpeed}
+                startDelay={startDelay1}
                 onComplete={self => {
                   self.el.parentElement.classList.remove('show-cursor')
                   typed2.el.parentElement.classList.add('show-cursor')
