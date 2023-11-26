@@ -113,7 +113,7 @@ export default function Portfolio () {
           <div className='item item4' itemType='http://schema.org/WebPage'>
             <a
               className='link-to-client-site'
-              href='https://www.therooseveltdoctor.com'
+              href=''
               target='_blank'
               rel='noopener noreferrer'
             >
