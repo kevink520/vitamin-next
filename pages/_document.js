@@ -7,7 +7,7 @@ class MyDocument extends Document {
         <Head>
           <link rel='icon' href='/favicon.ico' />
           <link rel='stylesheet' href='https://use.typekit.net/vrj7xjc.css' />
-          <script src='https://kit.fontawesome.com/62785f7405.js' crossorigin='anonymous' />
+          <script src='https://kit.fontawesome.com/62785f7405.js' crossOrigin='anonymous' async />
         </Head>
         <body>
           <Main />

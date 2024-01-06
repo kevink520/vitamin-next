@@ -77,7 +77,7 @@ export default function Services () {
                 <CopywritingSVG />
               </div>
               <div className='flex flex-col justify-center md:w-1/2 px-4'>
-                <p className='service-description'>I try to figure out how a business is making its customers' lives easier and happier. And I try to emphasize those things in a way that is both authentic and appealing.</p>
+                <p className='service-description'>I try to figure out how a business is making its customers&rsquo; lives easier and happier. And I try to emphasize those things in a way that is both authentic and appealing.</p>
               </div>
             </div>
           </div>
