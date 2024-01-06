@@ -13,6 +13,29 @@ export default function Portfolio () {
           <div className='item item1' itemType='http://schema.org/WebPage'>
             <a
               className='link-to-client-site'
+              href='https://snapcpa-staging.vercel.app'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <Image
+                src='/images/snapcpa-p.jpg'
+                alt='SnapCPA'
+                width={750}
+                height={428}
+              />
+              <div className='description'>
+                <h4 itemProp='name'>SnapCPA</h4>
+                <p className='hidden-sm'>
+                  Custom Next.js/Sanity.io website design and development with logged-in user dashboard
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div className='md:w-1/3 px-4 mb-4 md:mb-0'>
+          <div className='item item1' itemType='http://schema.org/WebPage'>
+            <a
+              className='link-to-client-site'
               href='https://www.ckocoaching.com'
               target='_blank'
               rel='noopener noreferrer'
@@ -56,6 +79,8 @@ export default function Portfolio () {
             </a>
           </div>
         </div>
+      </div>
+      <div className='md:flex -mx-4 my-8 p-row2'>
         <div className='md:w-1/3 px-4 mb-4 md:mb-0'>
           <div
             className='item item1'
@@ -83,8 +108,6 @@ export default function Portfolio () {
             </a>
           </div>
         </div>
-      </div>
-      <div className='md:flex -mx-4 my-8 p-row2'>
         <div className='md:w-1/3 px-4 mb-4 md:mb-0'>
           <div className='item item4' itemType='http://schema.org/WebPage'>
             <a
@@ -133,6 +156,8 @@ export default function Portfolio () {
             </a>
           </div>
         </div>
+      </div>
+      <div className='md:flex -mx-4 my-8 p-row3'>
         <div className='md:w-1/3 px-4 mb-4 md:mb-0'>
           <div className='item item4' itemType='http://schema.org/WebPage'>
             <a
@@ -157,8 +182,6 @@ export default function Portfolio () {
             </a>
           </div>
         </div>
-      </div>
-      <div className='md:flex -mx-4 my-8 p-row3'>
         <div className='md:w-1/3 px-4 mb-4 md:mb-0'>
           <div className='item item7' itemType='http://schema.org/WebPage'>
             <a
@@ -176,29 +199,6 @@ export default function Portfolio () {
               <div className='description'>
                 <h4 itemProp='name'>nextwitter</h4>
                 <p className='hidden-sm'>A Twitter-inspired social app made with Next.js</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div className='md:w-1/3 px-4 mb-4 md:mb-0'>
-          <div className='item item7' itemType='http://schema.org/WebPage'>
-            <a
-              className='link-to-client-site'
-              href='https://codepen.io/kevink520/full/VPxzVq/'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <Image
-                src='/images/javascript-calculator-p.jpg'
-                alt='Javascript Calculator'
-                width={750}
-                height={428}
-              />
-              <div className='description'>
-                <h4 itemProp='name'>Javascript Calculator</h4>
-                <p className='hidden-sm'>
-                  A calculator app made with JavaScript (ES2015)
-                </p>
               </div>
             </a>
           </div>

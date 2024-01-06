@@ -20,6 +20,14 @@ export default function MainSlider () {
     <Slider {...settings} className={`main-slider${ready ? ' ready' : ''}`} beforeChange={(oldIndex) => oldIndex === 0 && setReady(true)}>
       <div className='slide-inner w-full'>
         <Image
+          src='/images/snapcpa-devices.png'
+          width={889}
+          height={560}
+          alt='SnapCPA'
+        />
+      </div>
+      <div className='slide-inner w-full'>
+        <Image
           src='/images/newportlaworr-devices.png'
           width={889}
           height={560}
