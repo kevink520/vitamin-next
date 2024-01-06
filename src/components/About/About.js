@@ -6,7 +6,7 @@ export default function About () {
           <div className='lg:w-2/3 px-4 about-animated'>
             <h2 className='about-heading'>About <span className='orange'>Vitamin</span> Digital Media</h2>
                 <p className='lead' itemProp='description'>Hi, I&rsquo;m Kevin, and I&rsquo;m a full stack developer with more than 10 years of experience. And here&rsquo;s my brief background.</p>
-            <p className='mb-3'>When I attended Stuyvesant High School in Manhattan, I received good grades in math. (I completed AP (BC) Calculus in my junior year and missed perfect score in math SAT by just one question.) But I wasn’t into the robotics team like those who go on to become real engineers. I cared about other kids’ opinions of me. I liked to dress in nice clothes and downplayed school in front of peers.</p>
+            <p className='mb-3'>When I attended Stuyvesant High School in Manhattan, I received good grades in math. (I completed AP (BC) Calculus in my junior year and missed perfect score in math SAT by just one question.) But I wasn&rsquo;t into the robotics team like those who go on to become real engineers. I cared about other kids&rsquo; opinions of me. I liked to dress in nice clothes and downplayed school in front of peers.</p>
             <p className='mb-3'>Many years later, when I enrolled in a graduate professional writing program, a professor who worked at IBM came to the program and started web content development concentration suited for the digital economy. I loved the experience of building websites out of code, so I took all the courses on web design and development and made a habit of reading web programming books and practicing coding whenever I had time. After I graduated with a 4.0 GPA, I studied, freelanced, and contracted for the past{' '}{new Date().getFullYear() - 2012}{' '}years. I built numerous websites for small businesses and large nonprofits. Throughout my career, I worked with many talented designers who created beautiful designs that humbled me and taught me that a product, however well engineered, is worthless if no one loves it and uses it. And I met some 10x engineers who humbled me and taught me that elegance isn't just about how things look. I learned from these designers and developers to become a full stack developer with an eye for design.</p>
             <div className='social-buttons flex'>
               <a className='social-button' href='https://codepen.io/kevink520/' target='_blank' rel='noopener noreferrer'>
@@ -24,7 +24,7 @@ export default function About () {
           </div>
           <div className='lg:w-1/3 px-4 info-sidebar capabilities'>
             <h4 className='my-3 text-xl'>
-              <span className='orange'>Vitamin</span> Digital Media’s Capabilities
+              <span className='orange'>Vitamin</span> Digital Media&rsquo;s Capabilities
             </h4>
             <ul>
               <li><span>HTML5/<br />CSS3/<br />Sass</span></li>
