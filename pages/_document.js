@@ -6,7 +6,7 @@ class MyDocument extends Document {
       <Html lang='en'>
         <Head>
           <script async src='https://www.googletagmanager.com/gtag/js?id=G-KP53EQEWPD' />
-          <script dangerouslySetInnerHTML={{ _html: `
+          <script dangerouslySetInnerHTML={{ __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
