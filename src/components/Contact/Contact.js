@@ -1,25 +1,6 @@
-import { useEffect } from 'react'
 import GoogleMapReact from 'google-map-react'
 
 export default function Contact () {
-  useEffect(() => {
-    document.querySelectorAll('a').forEach(a => {
-      if (a.getAttribute('target') === '_blank' && !a.getAttribute('aria-label')) {
-        a.setAttribute('aria-label', `(open in new tab) ${a.textContent || a.title}`)
-      }
-    })
-
-    document.querySelectorAll('.gm-style').forEach(gm => {
-      gm.setAttribute('role', 'presentation')
-    })
-
-    document.querySelectorAll('[style]').forEach(el => {
-      const computedSize = parseFloat(window.getComputedStyle(el).fontSize)
-      if (computedSize < 11) {
-        el.style.fontSize = '11px'
-      }
-    })
-  }, [])
   return (
     <div id='contact'>
       <GoogleMapReact
