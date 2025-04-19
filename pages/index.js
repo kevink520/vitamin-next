@@ -1,5 +1,6 @@
 import { NextSeo } from 'next-seo'
 import Layout from 'src/components/Layout'
+import SkipLinks from 'src/components/SkipLinks'
 import Header from 'src/components/Header'
 import MainTyped from 'src/components/MainTyped'
 import MainSlider from 'src/components/MainSlider'
@@ -7,6 +8,7 @@ import Services from 'src/components/Services'
 import Portfolio from 'src/components/Portfolio'
 import About from 'src/components/About'
 import Contact from 'src/components/Contact'
+import Footer from 'src/components/Footer'
 
 export default function Home () {
   return (
@@ -17,21 +19,25 @@ export default function Home () {
         canonical='https://www.digitalmedia.nyc/'
       />
       <Layout>
+        <SkipLinks />
         <Header />
-        <div id='home' className='container px-4 pb-12 mx-auto'>
-          <div className='lg:flex -mx-4'>
-            <div className='inline-block lg:w-1/3 px-4 lg:pt-20 xl:pt-24 mb-12'>
-              <MainTyped />
-            </div>
-            <div className='lg:w-2/3 px-4'>
-              <MainSlider />
+        <div id='main-content'>
+          <div id='home' className='container px-4 pb-12 mx-auto'>
+            <div className='lg:flex -mx-4'>
+              <div className='inline-block lg:w-1/3 px-4 lg:pt-20 xl:pt-24 mb-12'>
+                <MainTyped />
+              </div>
+              <div className='lg:w-2/3 px-4'>
+                <MainSlider />
+              </div>
             </div>
           </div>
+          <Services />
+          <Portfolio />
+          <About />
+          <Contact />
         </div>
-        <Services />
-        <Portfolio />
-        <About />
-        <Contact />
+        <Footer />
       </Layout>
     </>
   )

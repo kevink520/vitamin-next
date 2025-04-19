@@ -1,5 +1,5 @@
 
-import Typed from 'react-typed'
+import { ReactTyped } from 'react-typed'
 
 const strings1 = ['Vitamin']
 const strings2 = [' Digital Media']
@@ -27,10 +27,10 @@ export default function MainTyped ({ dark }) {
   return (
     <div className={`inline text-2xl leading-normal ${dark ? 'text-brand-white' : 'text-brand-dark-gray'}`}>
       <div itemProp='name'>
-        <p className='mb-3'>
+        <h1 className='mb-3'>
           <span className='inline text-4xl leading-normal lg:text-2xl lg:leading-normal xl:text-4xl xl:leading-normal'>
             <span className={`${dark ? 'text-brand-white' : 'text-brand-orange'}`}>
-              <Typed
+              <ReactTyped
                 className='typed show-cursor'
                 strings={strings1}
                 typeSpeed={typeSpeed}
@@ -41,7 +41,7 @@ export default function MainTyped ({ dark }) {
                 }}
               />
             </span>
-            <Typed
+            <ReactTyped
               className='typed'
               strings={strings2}
               typedRef={typed => { typed2 = typed }}
@@ -54,7 +54,7 @@ export default function MainTyped ({ dark }) {
             />
           </span>
           <br />
-          <Typed
+          <ReactTyped
             className='typed'
             strings={strings3}
             typedRef={typed => { typed3 = typed }}
@@ -66,7 +66,7 @@ export default function MainTyped ({ dark }) {
             }}
           />
           <br />
-          <Typed
+          <ReactTyped
             className='typed'
             strings={strings4}
             typedRef={typed => { typed4 = typed }}
@@ -78,7 +78,7 @@ export default function MainTyped ({ dark }) {
             }}
           />
           <br />
-          <Typed
+          <ReactTyped
             className='typed'
             strings={strings5.map(str => `^${Math.round(str.length * typeSpeed + 300)} ${str}`)}
             typedRef={typed => { typed5 = typed }}
@@ -86,7 +86,7 @@ export default function MainTyped ({ dark }) {
             startDelay={startDelay5}
             backDelay={1000}
           />
-        </p>
+        </h1>
       </div>
     </div>
   )

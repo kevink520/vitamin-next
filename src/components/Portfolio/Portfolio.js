@@ -137,6 +137,7 @@ export default function Portfolio () {
             <a
               className='link-to-client-site'
               href=''
+              role='button'
               target='_blank'
               rel='noopener noreferrer'
             >

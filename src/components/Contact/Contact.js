@@ -1,6 +1,25 @@
+import { useEffect } from 'react'
 import GoogleMapReact from 'google-map-react'
 
 export default function Contact () {
+  useEffect(() => {
+    document.querySelectorAll('a').forEach(a => {
+      if (a.getAttribute('target') === '_blank' && !a.getAttribute('aria-label')) {
+        a.setAttribute('aria-label', `(open in new tab) ${a.textContent || a.title}`)
+      }
+    })
+
+    document.querySelectorAll('.gm-style').forEach(gm => {
+      gm.setAttribute('role', 'presentation')
+    })
+
+    document.querySelectorAll('[style]').forEach(el => {
+      const computedSize = parseFloat(window.getComputedStyle(el).fontSize)
+      if (computedSize < 11) {
+        el.style.fontSize = '11px'
+      }
+    })
+  }, [])
   return (
     <div id='contact'>
       <GoogleMapReact
@@ -20,10 +39,10 @@ export default function Contact () {
         <div>
           <form name='vitamin_contact' method='POST' data-netlify='true' data-netlify-honeypot='bot-field'>
             <input type='hidden' name='form-name' value='vitamin_contact' />
-            <p className='mb-3'><span className='form-control-wrap your-name'><input type='text' name='your-name' size='40' maxLength='80' id='name' placeholder='Your name' required /></span></p>
-            <p className='mb-3'><span className='form-control-wrap your-email'><input type='email' name='your-email' size='40' maxLength='80' id='email' placeholder='Your email' required /></span></p>
-            <p className='mb-3'><span className='form-control-wrap your-subject'><input type='text' name='your-subject' size='40' maxLength='80' id='subject' placeholder='Subject' /></span></p>
-            <p className='mb-3'><span className='form-control-wrap your-message'><textarea name='your-message' cols='40' rows='10' maxLength='5000' id='message' placeholder='Your message' /></span></p>
+            <p className='mb-3'><span className='form-control-wrap your-name'><input type='text' name='your-name' size='40' maxLength='80' id='name' placeholder='Your name' aria-label='Your name' required aria-required='true' /></span></p>
+            <p className='mb-3'><span className='form-control-wrap your-email'><input type='email' name='your-email' size='40' maxLength='80' id='email' placeholder='Your email' aria-label='Your email' required aria-required='true' /></span></p>
+            <p className='mb-3'><span className='form-control-wrap your-subject'><input type='text' name='your-subject' size='40' maxLength='80' id='subject' placeholder='Subject' aria-label='Subject' /></span></p>
+            <p className='mb-3'><span className='form-control-wrap your-message'><textarea name='your-message' cols='40' rows='10' maxLength='5000' id='message' placeholder='Your message' aria-label='Your message' /></span></p>
             <p className='mb-3'><input type='submit' value='Send' id='submit' /></p>
             <div className='response-output display-none' />
           </form>
